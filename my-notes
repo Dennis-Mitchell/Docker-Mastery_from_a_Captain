@@ -1,4 +1,15 @@
-Section 3
-    docker --version
-cd
+*** Section 3 ***
+===================
+Lesson 18
+===================
+docker version
+docker info 
+docker
+===================
+
+Docker command format
+    new management commands format:
+docker <command> <sub-command> (options)
+    old way (still works):
+docker <command> (options)
 
