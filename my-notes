@@ -40,3 +40,9 @@ docker container ls -a
 docker stop <id>
 docker container stop <id>
 docker logs <id>
+
+===================
+Lesson 20
+===================
+what happens with run
+  
