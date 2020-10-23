@@ -58,3 +58,16 @@ ps aux | grep mongo
 docker container -h
 
 
+===================
+Lesson 22
+===================
+Windows 10 Docker Containers:
+
+Windows Containers and Docker: 101:
+https://www.youtube.com/watch?v=066-9yw8-7c
+
+Beyond \ - the path to Windows and Linux parity in Docker
+https://www.youtube.com/watch?v=4ZY_4OeyJsw
+
+Docker + Microsoft - Investing in the Future of your Applications
+https://www.youtube.com/watch?v=QASAqcuuzgI
