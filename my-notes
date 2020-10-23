@@ -71,3 +71,12 @@ https://www.youtube.com/watch?v=4ZY_4OeyJsw
 
 Docker + Microsoft - Investing in the Future of your Applications
 https://www.youtube.com/watch?v=QASAqcuuzgI
+
+===================
+Lesson 23
+===================
+Assignment Create three containers
+- nginx -dp 80:80 --name nginx fart
+- mysql -dp 80:80 --name nginx fart
+- httpd
+-d --name
