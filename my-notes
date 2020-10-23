@@ -46,3 +46,15 @@ Lesson 20
 ===================
 what happens with run
   
+===================
+Lesson 21
+===================
+Container VS. VM: t's just a process
+
+docker run --name mongo -d mongo
+list running processes in specific container
+docker top mongo
+ps aux | grep mongo
+docker container -h
+
+
