@@ -5,6 +5,7 @@ Lesson 18
 docker version
 docker info 
 docker
+echo hi bb
 ===================
 
 Docker command format
@@ -14,3 +15,28 @@ docker <command> <sub-command> (options)
 docker <command> (options)
 
 
+===================
+Lesson 19
+===================
+This Lecture:
+image vs container
+- image is the binaries (class) 
+- container is an instance (object)
+
+run/stop/remove
+check logs and processes
+
+Docker Toolbox: http://192.168.99.100
+===================
+start a new container with: run
+start an old container: start
+docker run -dp 80:80 nginx
+docker run --name fart -dp 80:80 nginx
+docker top fart
+docker rm <id> -f
+docker ps
+docker container ls 
+docker container ls -a
+docker stop <id>
+docker container stop <id>
+docker logs <id>
