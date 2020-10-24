@@ -82,3 +82,6 @@ docker run --name nginx -dp 80:80 nginx
 docker run --name httpd -dp 8080:80 httpd
 docker run -e MYSQL_RANDOM_ROOT_PASSWORD=yes --name mysql -dp 3306:3306 mysql
 docker logs mysql 2>&1 | grep "PASSWORD"
+
+STOP ALL:
+docker stop $(docker ps -a -q)
