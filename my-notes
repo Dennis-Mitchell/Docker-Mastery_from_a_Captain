@@ -102,3 +102,9 @@ docker ps && echo print all running containers
 docker start nginx
 docker start mysql
 docker ps -a --format "{{.Names}} {{.ID}} {{.Ports}} {{.Status}}"
+===================
+Lesson 26
+===================
+docker container run -it && echo start a new container interactively
+docker container exec -it bash/sh &&  echo run shell in existing container
+
