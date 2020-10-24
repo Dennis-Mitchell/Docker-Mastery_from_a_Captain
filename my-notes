@@ -85,3 +85,5 @@ docker logs mysql 2>&1 | grep "PASSWORD"
 
 STOP ALL:
 docker stop $(docker ps -a -q)
+REMOVE ALL:
+docker rm $(docker ps -a -q)
