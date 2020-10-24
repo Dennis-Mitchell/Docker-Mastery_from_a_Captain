@@ -94,7 +94,11 @@ docker rm $(docker ps -a -q)
 Lesson 25
 ===================
 whats going on in containers
-docker container top # test comment line
-docker container inspect
-docker stats
+docker container top && echo list process of container
+docker container inspect && echo details of how one container started
+docker inspect nginx
+docker stats && echo performance stats for all containers in real time
 docker ps && echo print all running containers
+docker start nginx
+docker start mysql
+docker ps -a --format "{{.Names}} {{.ID}} {{.Ports}} {{.Status}}"
