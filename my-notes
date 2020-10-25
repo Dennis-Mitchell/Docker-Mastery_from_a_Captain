@@ -2,11 +2,12 @@
 ===================
 Lesson 18
 ===================
+Check our docker install and config:
+
 docker version
 docker info 
 docker
 echo hi bb
-===================
 
 Docker command format
     new management commands format:
@@ -18,7 +19,8 @@ docker <command> (options)
 ===================
 Lesson 19
 ===================
-This Lecture:
+Starting a Nginx Container:
+
 image vs container
 - image is the binaries (class) 
 - container is an instance (object)
@@ -27,7 +29,7 @@ run/stop/remove
 check logs and processes
 
 Docker Toolbox: http://192.168.99.100
-===================
+
 start a new container with: run
 start an old container: start
 docker run -dp 80:80 nginx
@@ -44,12 +46,12 @@ docker logs <id>
 ===================
 Lesson 20
 ===================
-what happens with run
+Debrief: What happens when we run a container:
   
 ===================
 Lesson 21
 ===================
-Container VS. VM: t's just a process
+Container VS. VM: t's just a process:
 
 docker run --name mongo -d mongo
 list running processes in specific container
@@ -75,7 +77,8 @@ https://www.youtube.com/watch?v=QASAqcuuzgI
 ===================
 Lesson 23
 ===================
-🤔 Assignment Create three containers
+Assignment: Manage Multiple Containers:
+
 *-- Start fresh --*
 docker container prune
 docker run --name nginx -dp 80:80 nginx
@@ -93,6 +96,8 @@ docker rm $(docker ps -a -q)
 ===================
 Lesson 25
 ===================
+What's going on in Containers:
+
 whats going on in containers
 docker container top && echo list process of container
 docker container inspect && echo details of how one container started
@@ -105,8 +110,27 @@ docker ps -a --format "{{.Names}} {{.ID}} {{.Ports}} {{.Status}}"
 ===================
 Lesson 26
 ===================
+Getting Shell inside containers:
+
 docker container run -it && echo start a new container interactively
 docker container exec -it bash/sh &&  echo run shell in existing container
 
+docker run -it --name proxy nginx sh
+ls -la
+docker run -it --name ubuntu ubuntu
+docker start -ai ubuntu
+docker ps
+<C-p><C-q> to exit container and turn into a daemon
+docker exec -it ubuntu sh
+docker pull alpine
+docker image ls 
+docker images
+docker run -itd --name al alpine
+===================
+Lesson 27
+===================
+Docker Networks:
 
-
+docker port nginx
+docker inspect nginx 
+docker inspect nginx --format "{{.NetworkSettings.IPAddress}}"
