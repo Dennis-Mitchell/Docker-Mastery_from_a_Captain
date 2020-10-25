@@ -134,3 +134,5 @@ Docker Networks:
 docker port nginx
 docker inspect nginx 
 docker inspect nginx --format "{{.NetworkSettings.IPAddress}}"
+ifconfig en0
+batteries included but removable
