@@ -136,3 +136,15 @@ docker inspect nginx
 docker inspect nginx --format "{{.NetworkSettings.IPAddress}}"
 ifconfig en0
 batteries included but removable
+===================
+Lesson 28
+===================
+Update PDF:
+
+use nginx:alpine for ping
+===================
+Lesson 29
+===================
+Docker Networks: CLI
+
+
