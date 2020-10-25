@@ -1,6 +1,6 @@
 *** Section 3 *** 😝
 ===================
-Lesson 18
+   Lesson 18
 ===================
 Check our docker install and config:
 
@@ -17,7 +17,7 @@ docker <command> (options)
 
 
 ===================
-Lesson 19
+   Lesson 19
 ===================
 Starting a Nginx Container:
 
@@ -44,12 +44,12 @@ docker container stop <id>
 docker logs <id>
 
 ===================
-Lesson 20
+   Lesson 20
 ===================
 Debrief: What happens when we run a container:
   
 ===================
-Lesson 21
+   Lesson 21
 ===================
 Container VS. VM: t's just a process:
 
@@ -61,7 +61,7 @@ docker container -h
 
 
 ===================
-Lesson 22
+   Lesson 22
 ===================
 Windows 10 Docker Containers:
 
@@ -75,7 +75,7 @@ Docker + Microsoft - Investing in the Future of your Applications
 https://www.youtube.com/watch?v=QASAqcuuzgI
 
 ===================
-Lesson 23
+   Lesson 23
 ===================
 Assignment: Manage Multiple Containers:
 
@@ -94,7 +94,7 @@ REMOVE ALL:
 docker rm $(docker ps -a -q)
 
 ===================
-Lesson 25
+   Lesson 25
 ===================
 What's going on in Containers:
 
@@ -108,7 +108,7 @@ docker start nginx
 docker start mysql
 docker ps -a --format "{{.Names}} {{.ID}} {{.Ports}} {{.Status}}"
 ===================
-Lesson 26
+   Lesson 26
 ===================
 Getting Shell inside containers:
 
@@ -127,7 +127,7 @@ docker image ls
 docker images
 docker run -itd --name al alpine
 ===================
-Lesson 27
+   Lesson 27
 ===================
 Docker Networks:
 
@@ -137,13 +137,13 @@ docker inspect nginx --format "{{.NetworkSettings.IPAddress}}"
 ifconfig en0
 batteries included but removable
 ===================
-Lesson 28
+   Lesson 28
 ===================
 Update PDF:
 
 use nginx:alpine for ping
 ===================
-Lesson 29
+   Lesson 29
 ===================
 Docker Networks: CLI
 
@@ -162,3 +162,14 @@ docker run -d --name new_nginx --network  my_app_net nginx:alpine
 docker network inspect my_app_net
 docker network connect  my_app_net al
 docker inspect al
+===================
+   Lesson 30
+===================
+Docker Networks: DNS and How containers Find Each Other
+
+DNS is the key to easy inter-container comms
+See how it works by default with cusstom networks
+Use --link to eanable DNS on default bridge network
+
+
+
