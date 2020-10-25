@@ -147,4 +147,18 @@ Lesson 29
 ===================
 Docker Networks: CLI
 
+docker network ls
+docker network inspect
+docker network create --driver
+docker network connect <net-work> <container>
+docker network disconnect
 
+"bridge" is the typical virtual network
+"host" gains performance skips virtual network sacrifices security
+"none" removes eth0 and only localhost is avaiable
+
+docker network create my_app_net
+docker run -d --name new_nginx --network  my_app_net nginx:alpine
+docker network inspect my_app_net
+docker network connect  my_app_net al
+docker inspect al
