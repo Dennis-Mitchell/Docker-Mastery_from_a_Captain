@@ -171,5 +171,7 @@ DNS is the key to easy inter-container comms
 See how it works by default with cusstom networks
 Use --link to eanable DNS on default bridge network
 
-
-
+docker run -d --name my_nginx --network my_app_net nginx:alpine
+docker network inspect my_app_net
+docker exec -it my_nginx ping new_nginx
+Use custom networks instead of 'bridge'
