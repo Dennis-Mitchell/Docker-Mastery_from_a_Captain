@@ -175,3 +175,19 @@ docker run -d --name my_nginx --network my_app_net nginx:alpine
 docker network inspect my_app_net
 docker exec -it my_nginx ping new_nginx
 Use custom networks instead of 'bridge'
+===================
+   Lesson 31
+===================
+Asssignment Requirements: CLI App Testing:
+
+- Know how to use -it to get shell in container
+- check curl cli tool version
+- Use centos:7 and ubuntu:14.04, using -it
+- Use --rm option to save clean up time
+- ensure curl is installed and on lastet version for that distro
+    docker run -it --rm centos:7 bash
+    docker run -it --rm ubuntu:14.04 bash
+    apt-get update && apt-get install curl -y
+    yum update curl
+    curl --version
+
