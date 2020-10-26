@@ -191,3 +191,21 @@ Asssignment Requirements: CLI App Testing:
     yum update curl
     curl --version
 
+===================
+   Lesson 33
+===================
+FIXME: Bug in Alpine 3:10 
+nslookup search. must be added
+
+===================
+   Lesson 33
+===================
+Docker Engine 1.11 allows multiple containers on a created network to respond
+to the same DNS adress
+- Create a new virtual network (default bridge diver)
+- Create two containers from elasticsearch:2 image
+- Research and use --network-alias search
+- Run nslookup search with --net to see the two containers for the same DNS name
+- Run centos curl -s search:9200 with --net multiple time until i see both names
+docker network create my-net
+docker pull elasticsearch:2
