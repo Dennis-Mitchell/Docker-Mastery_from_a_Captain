@@ -199,7 +199,7 @@ FIXME: Bug in Alpine 3:10
 nslookup search. must be added
 
 ===================
-   Lesson 33
+   Lesson 34
 ===================
 Docker Engine 1.11 allows multiple containers on a created network to respond
 to the same DNS adress
