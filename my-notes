@@ -211,3 +211,10 @@ to the same DNS adress
 docker network create my-net
 docker pull elasticsearch:2
 docker run -itd elasticsearch:2 --tag el --network=my-net --alias here 
+===================
+   Lesson 35
+===================
+Assignment Answers: DNS Round Robin Test
+
+docker network create dude
+docker run -d --net dude --net-alias search elasticsearch:2
