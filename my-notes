@@ -149,6 +149,7 @@ Docker Networks: CLI
 
 docker network ls
 docker network inspect
+docker network inspect my-net
 docker network create --driver
 docker network connect <net-work> <container>
 docker network disconnect
@@ -209,3 +210,4 @@ to the same DNS adress
 - Run centos curl -s search:9200 with --net multiple time until i see both names
 docker network create my-net
 docker pull elasticsearch:2
+docker run -itd elasticsearch:2 --tag el --network=my-net --alias here 
