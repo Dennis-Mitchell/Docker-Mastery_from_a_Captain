@@ -236,8 +236,16 @@ docker run --rm --net dude centos curl -s search:9200
 ===================
    Lesson 36
 ===================
-What's In An Image (and what isn't)
+
+What's in an image (and what isn't)
+- App binaries and dependencies
+- Metadata about the image data and how to run the image
+- Official definition: "An image is an ordered collection of root filesytem
+changes and the corresponding execution parameters for use with a container
+runtime."
+- Not a complete OS. No kernel, kernel modules (e.g. drivers)
 
 All about images
-what's in it
 
+Using Docker Hub registry
+Managing our own images     
