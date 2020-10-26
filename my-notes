@@ -278,3 +278,13 @@ Image and layers: Review
 - this saves storage and transfer time
 - a container is just a single read/write layer on top of an image
 docker image history and inspect commands can teach us
+
+===================
+   Lesson 39
+===================
+Image Tagging and Pusing to Docker Hub
+docker image tag --help
+docker pull mysql/mysql-server
+docker images
+Tag example:
+docker tag nginx dennismitchellx/my-nginx
