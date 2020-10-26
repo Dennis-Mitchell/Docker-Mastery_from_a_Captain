@@ -218,5 +218,6 @@ Assignment Answers: DNS Round Robin Test
 
 docker network create dude
 docker run -d --net dude --net-alias search elasticsearch:2
+docker run -d --net dude --net-alias search elasticsearch:2
 docker run --rm --net dude alpine nslookup search
 docker run --rm --net dude centos curl -s search:9200
