@@ -221,3 +221,11 @@ docker run -d --net dude --net-alias search elasticsearch:2
 docker run -d --net dude --net-alias search elasticsearch:2
 docker run --rm --net dude alpine nslookup search
 docker run --rm --net dude centos curl -s search:9200
+
+===================
+   Lesson 36
+===================
+What's In An Image (and what isn't)
+
+All about images
+what's in it
