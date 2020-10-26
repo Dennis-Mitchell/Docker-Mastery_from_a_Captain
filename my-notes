@@ -256,3 +256,25 @@ Managing our own images
 The Mighty hub: Using Docker Hub Registry Images
 Explore in dockerhub will list the official images
 
+===================
+   Lesson 38
+===================
+Images and their layers: Discover the image cache
+
+- Image layers
+- union file system
+- history and inspect commands
+- copy on write
+docker image ls
+docker pull nginx
+docker history nginx && echo 'Shows layers of changes made in images'
+docker run -d nginx
+docker ps -a
+docker image inspect nginx
+
+Image and layers: Review
+- Images are made up of file system changes and metadata
+- Each layer is uniquely identified and only stored once on a host
+- this saves storage and transfer time
+- a container is just a single read/write layer on top of an image
+docker image history and inspect commands can teach us
