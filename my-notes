@@ -1,3 +1,8 @@
+*========================================*
+*=              Section 3:              =*
+*=         Creating and Using           =* 
+*=       ContainerssLike a Boss         =*
+*========================================*
 *** Section 3 *** 😝
 ===================
    Lesson 18
@@ -221,6 +226,12 @@ docker run -d --net dude --net-alias search elasticsearch:2
 docker run -d --net dude --net-alias search elasticsearch:2
 docker run --rm --net dude alpine nslookup search
 docker run --rm --net dude centos curl -s search:9200
+
+*========================================*
+*=              Section 4:              =*
+*=  Container Images, Where to  find    =* 
+*=    them and how to build them        =*
+*========================================*
 
 ===================
    Lesson 36
