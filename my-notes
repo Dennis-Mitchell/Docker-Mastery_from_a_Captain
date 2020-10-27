@@ -288,3 +288,9 @@ docker pull mysql/mysql-server
 docker images
 Tag example:
 docker tag nginx dennismitchellx/my-nginx
+docker login
+docker config
+docker images
+docker push dennismitchellx/my-nginx
+docker tag nginx dennismitchellx/my-nginx:testing
+docker push dennismitchellx/my-nginx:testing
