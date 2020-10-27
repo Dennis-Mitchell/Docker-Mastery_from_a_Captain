@@ -294,3 +294,7 @@ docker images
 docker push dennismitchellx/my-nginx
 docker tag nginx dennismitchellx/my-nginx:testing
 docker push dennismitchellx/my-nginx:testing
+===================
+   Lesson 40
+===================
+Building Images: Dockerfile Basics
