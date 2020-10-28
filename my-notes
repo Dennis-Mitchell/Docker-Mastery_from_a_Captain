@@ -299,3 +299,10 @@ docker push dennismitchellx/my-nginx:testing
 ===================
 Building Images: Dockerfile Basics
 Briefing on Dockerfiles
+===================
+   Lesson 41
+===================
+Building Images: Running Docker Builds 
+Made diectory build-lesson-41
+placed Dockerfile in...
+docker build -t customnginx .
