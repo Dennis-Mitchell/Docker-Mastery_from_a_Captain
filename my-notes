@@ -306,3 +306,7 @@ Building Images: Running Docker Builds
 Made diectory build-lesson-41
 placed Dockerfile in...
 docker build -t customnginx .
+===================
+   Lesson 42
+===================
+Building Images: Extending Official Images
