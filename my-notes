@@ -310,5 +310,8 @@ docker build -t customnginx .
    Lesson 42
 ===================
 Building Images: Extending Official Images
-docker-sample-2
-
+docker run -dp 80:80 --rm nginx
+docker ps
+docker build -t nginx-with-html . && echo '<==== in correct directory'
+docker run -dp 80:80 --rm nginx-with-html
+docker tag nginx-with-html dennismitchellx/nginx-with-html
