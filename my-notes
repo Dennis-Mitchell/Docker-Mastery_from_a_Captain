@@ -298,3 +298,4 @@ docker push dennismitchellx/my-nginx:testing
    Lesson 40
 ===================
 Building Images: Dockerfile Basics
+Briefing on Dockerfiles
