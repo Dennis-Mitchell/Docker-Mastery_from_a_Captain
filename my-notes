@@ -310,3 +310,5 @@ docker build -t customnginx .
    Lesson 42
 ===================
 Building Images: Extending Official Images
+docker-sample-2
+
