@@ -315,3 +315,8 @@ docker ps
 docker build -t nginx-with-html . && echo '<==== in correct directory'
 docker run -dp 80:80 --rm nginx-with-html
 docker tag nginx-with-html dennismitchellx/nginx-with-html
+===================
+   Lesson 43
+===================
+Assignment: Build your own image
+
