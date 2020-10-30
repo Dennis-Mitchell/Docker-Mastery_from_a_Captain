@@ -320,3 +320,6 @@ docker tag nginx-with-html dennismitchellx/nginx-with-html
 ===================
 Assignment: Build your own image
 
+Use existing Node.js app and Dockerize it
+Make Dockerfile. Build it. Test it. Push it. (rm it). Run it.
+Details in dockerfile-assignment-1/Dockerfile
