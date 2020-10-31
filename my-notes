@@ -335,3 +335,6 @@ service docker start
 
 add docker to alpine start on boot:
 rc-update add docker boot
+
+Verify docker is running:
+docker ps
