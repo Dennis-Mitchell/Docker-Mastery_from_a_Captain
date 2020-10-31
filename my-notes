@@ -326,7 +326,12 @@ Details in dockerfile-assignment-1/Dockerfile
 
 Upload to Alpine:
 scp -r my-dockerfile-assignment-1 root@198.199.87.52:/root
+
 Add docker to alpine:
 apk add docker docker-compose
+
+Start docker:
+service docker start
+
 add docker to alpine start on boot:
 rc-update add docker boot
