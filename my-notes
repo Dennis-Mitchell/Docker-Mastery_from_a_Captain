@@ -338,3 +338,6 @@ rc-update add docker boot
 
 Verify docker is running:
 docker ps
+
+Install Nodejs on Alpine:
+apk add --update nodejs npm
