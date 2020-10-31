@@ -347,6 +347,8 @@ docker build -t first .
 
 Run:
 docker run -dp 80:3000 first
+docker run --restart always -dp 80:3000 first
+
 
 Add retart policy:
 docker update --restart always first && echo 'for running conatiner'
