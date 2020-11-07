@@ -348,6 +348,7 @@ docker build -t first .
 Run:
 docker run -dp 80:3000 first
 docker run --restart always -dp 80:3000 first
+docker run --rm -dp 80:3000 first
 
 
 Add retart policy:
@@ -364,4 +365,8 @@ RUN npm install && npm cache clean --force
 COPY . .
 EXPOSE 3000
 CMD /sbin/tini -- node ./bin/www
+
+docker tag --help
+docker tag ass1 dennismitchellx/testing-node
+docker push ass1 dennismitchellx/testing-node
 
