@@ -376,3 +376,13 @@ docker run --rm -p 80:3000 dennismitchellx/testing-node
 ===================
 docker image prune && echo 'clean up just the dangling images'
 docker system prune && echo 'will clean up everything'
+*========================================*
+*=              Section 5:              =*
+*= Container Lifetime & Persistent Data =*
+*=       Volumes, volumes, volumes      =*
+*========================================*
+
+===================
+   Lesson 46
+===================
+Container Lifetime & Persistent Data
