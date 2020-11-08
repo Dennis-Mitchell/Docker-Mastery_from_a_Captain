@@ -368,5 +368,6 @@ CMD /sbin/tini -- node ./bin/www
 
 docker tag --help
 docker tag ass1 dennismitchellx/testing-node
-docker push ass1 dennismitchellx/testing-node
-
+docker push dennismitchellx/testing-node
+docker image rm dennismitchellx/testing-node
+docker run --rm -p 80:3000 dennismitchellx/testing-node
