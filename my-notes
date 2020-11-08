@@ -386,3 +386,16 @@ docker system prune && echo 'will clean up everything'
    Lesson 46
 ===================
 Container Lifetime & Persistent Data
+
+- Defining the problem of persistent data
+- Key concepts with containers: immutable, ephemeral
+- Learing and using Data Volumes
+- Learning and using Bind Mounts
+- Assignments
+
+- Seperation of Concerns
+- Persistent Data
+- Two ways: Vollumes and Bind Mounts
+- Volumes: make speical location outside of container union file system(UFS)
+- Bind Mounts: link container path to host path
+
