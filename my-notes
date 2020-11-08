@@ -372,7 +372,7 @@ docker push dennismitchellx/testing-node
 docker image rm dennismitchellx/testing-node
 docker run --rm -p 80:3000 dennismitchellx/testing-node
 ===================
-   Lesson 44
+   Lesson 45
 ===================
 docker image prune && echo 'clean up just the dangling images'
 docker system prune && echo 'will clean up everything'
