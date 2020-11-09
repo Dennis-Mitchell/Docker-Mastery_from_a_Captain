@@ -395,15 +395,14 @@ Container Lifetime & Persistent Data
 
 - Seperation of Concerns
 - Persistent Data
-- Two ways: Vollumes and Bind Mounts
+- Two ways: Volumes and Bind Mounts
 - Volumes: make speical location outside of container union file system(UFS)
 - Bind Mounts: link container path to host path
 
 ===================
    Lesson 47
 ===================
-Persistent Data
-Data volumes
+Persistent Data: Data volumes
 VOLUME command in Dockerfile
 -v in command line
 docker pull mysql
@@ -411,7 +410,10 @@ docker inspect mysql
 docker run -e MYSQL_ALLOW_EMPTY_PASSWORD=true --name mysql -d mysql
 docker volume ls
 docker volume inspect a1055502bc9555347e391facfbc99ee6f48a51de70d3eab101a62f2c74f7b41a
-named Volumes: assign vols to containers
+
+named Volumes: assign  and Name volumes to containers:
+-v volume-name:/path/to/directory/in/container
+
 docker run -e MYSQL_ALLOW_EMPTY_PASSWORD=true --name mysql -d -v mysql-db:/var/lib/mysql mysql
 docker volume ls
 docker inspect mysql-db
@@ -426,3 +428,9 @@ Maps the host file or directory to a container file or directory
 - ... run -v /path/to/directory/on/host:/path/in/container (mac)
 - ... run -v //c/path/to/directory/on/host:/path/in/container (windows)
 docker run -d --name nginx -p 80:80 -v $(pwd):/usr/share/nginx/html nginx
+===================
+   Lesson 50
+===================
+Assignment: Named Volumes
+
+- Database upgrade with containers
