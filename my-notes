@@ -425,3 +425,4 @@ Maps the host file or directory to a container file or directory
 - Can't use in Dockerfile, must be at container run command
 - ... run -v /path/to/directory/on/host:/path/in/container (mac)
 - ... run -v //c/path/to/directory/on/host:/path/in/container (windows)
+docker run -d --name nginx -p 80:80 -v $(pwd):/usr/share/nginx/html nginx
