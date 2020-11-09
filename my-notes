@@ -415,3 +415,8 @@ named Volumes: assign vols to containers
 docker run -e MYSQL_ALLOW_EMPTY_PASSWORD=true --name mysql -d -v mysql-db:/var/lib/mysql mysql
 docker volume ls
 docker inspect mysql-db
+===================
+   Lesson 49
+===================
+Persistent Data: Bind Mounts
+Maps the host file or directory to a container file or directory
