@@ -420,3 +420,8 @@ docker inspect mysql-db
 ===================
 Persistent Data: Bind Mounts
 Maps the host file or directory to a container file or directory
+- Basically two locations poointing to the same file(s)
+- Skips UFS, and host files over-write in any container
+- Can't use in Dockerfile, must be at container run command
+- ... run -v /path/to/directory/on/host:/path/in/container (mac)
+- ... run -v //c/path/to/directory/on/host:/path/in/container (windows)
